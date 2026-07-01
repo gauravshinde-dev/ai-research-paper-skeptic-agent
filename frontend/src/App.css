@@ -1,0 +1,80 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f1117;
+  color: #e0e0e0;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1 { font-size: 2rem; color: #fff; margin-bottom: 8px; }
+.subtitle { color: #888; margin-bottom: 40px; }
+
+.upload-box {
+  border: 2px dashed #333;
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.2s;
+  margin-bottom: 20px;
+}
+.upload-box:hover { border-color: #6c63ff; }
+.upload-box p { color: #888; margin-top: 8px; }
+
+.btn {
+  background: #6c63ff;
+  color: white;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+.btn:hover { background: #574fd6; }
+.btn:disabled { background: #333; cursor: not-allowed; }
+
+.card {
+  background: #1a1d2e;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+  border: 1px solid #2a2d3e;
+}
+.card h2 { font-size: 1rem; color: #6c63ff; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 1px; }
+.card p, .card li { color: #ccc; line-height: 1.7; }
+.card ul { padding-left: 20px; }
+
+.evidence-item {
+  background: #12151f;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+  border-left: 3px solid #6c63ff;
+}
+.badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  margin-top: 6px;
+}
+.badge.strong { background: #1a3a2a; color: #4caf82; }
+.badge.moderate { background: #3a2a10; color: #f0a500; }
+.badge.weak { background: #3a1a1a; color: #f05050; }
+.badge.none { background: #2a2a2a; color: #888; }
+
+.warning { background: #2a1a10; border-left: 3px solid #f0a500; border-radius: 8px; padding: 12px 16px; margin-bottom: 8px; color: #f0a500; }
+.danger { background: #2a1010; border-left: 3px solid #f05050; border-radius: 8px; padding: 12px 16px; margin-bottom: 8px; color: #f05050; }
+.success { background: #1a2a1a; border-left: 3px solid #4caf82; border-radius: 8px; padding: 12px 16px; color: #4caf82; }
+
+.spinner { text-align: center; padding: 60px; color: #6c63ff; font-size: 1.1rem; }
+.filename { color: #6c63ff; margin-top: 8px; font-size: 0.9rem; }
